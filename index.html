@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <title>Flex Task</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400;700&display=swap');
+        * {
+            margin: o;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: hsl(0, 0%, 95%);
+            color: hsla(0, 0%, 100%, 0.75);
+        }
+        
+        .flex-container {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: row;
+        }
+        
+        .item1 {
+            background-color: hsl(31, 77%, 52%);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        
+        .item2 {
+            background-color: hsl(184, 100%, 22%);
+        }
+        
+        .item3 {
+            background-color: hsl(179, 100%, 13%);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        button {
+            border: 1px solid hsl(0, 0%, 95%);
+            border-radius: 20px;
+            padding: 10px;
+            margin: 3em;
+            font-size: 15px;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+        
+        .btn-1 {
+            color: hsl(31, 77%, 52%);
+            background-color: hsl(0, 0%, 95%);
+        }
+        
+        .btn-1:active {
+            color: hsl(0, 0%, 95%);
+            background-color: hsl(31, 77%, 52%);
+        }
+        
+        .btn-2 {
+            color: hsl(184, 100%, 22%);
+            background-color: hsl(0, 0%, 95%);
+        }
+        
+        .btn-2:active {
+            color: hsl(0, 0%, 95%);
+            background-color: hsl(184, 100%, 22%);
+        }
+        
+        .btn-3 {
+            color: hsl(179, 100%, 13%);
+            background-color: hsl(0, 0%, 95%);
+        }
+        
+        .btn-3:active {
+            color: hsl(0, 0%, 95%);
+            background-color: hsl(179, 100%, 13%);
+        }
+        
+        p {
+            font-size: 15px;
+            font-family: 'Lexend Deca', sans-serif;
+            margin: 2em;
+        }
+        
+        h3 {
+            font-size: 30px;
+            font-family: 'Big Shoulders Display', cursive;
+            margin: 1em;
+        }
+        
+        img {
+            margin: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="flex-container">
+            <div class="item1">
+                <img src="./icon-sedans.svg">
+                <h3>SEDANS</h3>
+                <p> Choose a sedan for its affordability and fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+                <button class="btn-1"> Learn More</button>
+            </div>
+            <div class="item2">
+                <img src="./icon-suvs.svg">
+                <h3>SUVS</h3>
+                <p>Take on SUV for its specious interior, power and versatility. Perfect for your next family vacation and all road adventures.</p>
+                <button class="btn-2">Learn More</button>
+            </div>
+            <div class="item3">
+                <img src="./icon-luxury.svg">
+                <h3>LUXURY</h3>
+                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+                <button class="btn-3">Learn More</button>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
